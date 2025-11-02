@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cap Image Editor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav style="height: 30px;">
+        <a href="https://docs.re.xyz/" style="float: right;">Docs</a>
+        <a href="https://discord.gg/reprotocol" style="float: right;">Re discord</a>
+
+    
+    </nav>
+
+    <div class="container">
+        <h1>Apni Image Mein Cap Add Karein</h1>
+        
+        <div class="controls">
+            <label for="uploader">1. Apni Image Upload Karein:</label>
+            <input type="file" id="uploader">
+            
+        </div>
+
+        <div class="controls">
+            <button id="addCap">2. Cap Add Karein</button>
+            <button id="downloadBtn">3. Image Download Karein</button>
+        </div>
+
+        <div class="editor-area">
+            <canvas id="editorCanvas"></canvas>
+        </div>
+
+        <h2>Aapke Edits</h2>
+        <div id="gallery" class="gallery-container">
+            </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/fabric.js/5.3.0/fabric.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
